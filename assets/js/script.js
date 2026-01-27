@@ -1,3 +1,5 @@
+// Mini-desafio (Alternar Estado)
+
 const btnNome = window.document.getElementById('btnNome')
 const saida = window.document.getElementById('saida')
 let ligado = false
@@ -12,4 +14,12 @@ btnNome.addEventListener("click", () =>{
         saida.textContent = 'Estado: OFF'
         btnNome.textContent = 'Desligado'
     }
+})
+
+// Exercício 01
+
+const btn = window.document.getElementById('btn')
+
+btn.addEventListener("click", () =>{
+    window.alert("Clicou")
 })
