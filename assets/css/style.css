@@ -9,6 +9,7 @@ body{
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    
 
 }
 
@@ -23,6 +24,7 @@ header{
 
 main{
     max-width: 900px;
+    height: 68.9vh;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -31,6 +33,40 @@ main{
 
 section{
     margin-bottom: 20px;
+}
+
+#estudos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#estudos a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+#estudos .btn{
+    margin-top: 20px;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2 ease,
+                box-shadow 0.2s ease;
+    
+
+}
+
+#estudos .btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.281);
+}
+
+#habilidades{
+    margin-left: 40px;
 }
 
 footer{
