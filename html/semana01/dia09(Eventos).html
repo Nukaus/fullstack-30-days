@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+<body>
+    <p id="valor">0</p>
+    <button id="btn">Adicionar</button>
+
+    <script>
+        let contador = 0
+        const valor = window.document.getElementById('valor') 
+        const botao = window.document.getElementById('btn') 
+
+        botao.addEventListener('click', () => {
+            contador ++
+            valor.innerText = contador
+        })
+    </script>
+</body>
+</html>

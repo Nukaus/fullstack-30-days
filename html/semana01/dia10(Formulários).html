@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        #form{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+        }
+
+        input{
+            width: 300px;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        #btn{
+            width: 100px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <div id="form">
+        <input type="text" name="nome" id="nome" placeholder="Seu nome:">
+        <input type="text" name="email" id="email" placeholder="Seu e-mail:">
+        <input type="number" name="telefone" id="telefone" placeholder="(31) 9999-9999">
+        <button id="btn">Cadastrar</button>
+    </div>
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        const nome = document.getElementById('nome')
+        const email = document.getElementById('email')
+        const telefone = document.getElementById('telefone')
+        const botao = document.getElementById('btn')
+
+        botao.addEventListener('click', () => {
+            res.innerHTML = `DADOS CADASTRADOS <br>Nome: ${nome.value}<br>E-mail: ${email.value}<br>Telefone: ${telefone.value}`
+            nome.value = ''
+            email.value = ''
+            telefone.value = ''
+        })
+
+
+    </script>
+</body>
+</html>
