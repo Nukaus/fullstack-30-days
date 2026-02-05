@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Metas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="projeto-container">
+        <h2>Simulador de Metas</h2>
+        <form id="form-projeto">
+            <div class="input-group">
+                <label>Qual sua meta? (R$)</label>
+                <input type="number" id="meta" placeholder="Ex: 1000">
+            </div>
+            <div class="input-group">
+                <label>Prazo (Meses)</label>
+                <input type="number" id="prazo" placeholder="Ex: 12">
+            </div>
+            <button type="submit" class="btn-principal" id="btn">Gerar Plano</button>
+        </form>
+        
+        <div id="resultado-display">
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
