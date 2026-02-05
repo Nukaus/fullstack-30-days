@@ -1,77 +1,103 @@
-*{
+:root {
+    --primary: #2563eb; /* Azul Moderno */
+    --dark: #1e293b;
+    --light-bg: #f8fafc;
+    --white: #ffffff;
+    --text: #334155;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    
-
-}
-
-header{
-    background: #222;
-    color: #fff;
-    padding: 20px;
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o footer fique no fundo */
 }
 
-main{
-    max-width: 900px;
-    height: 68.9vh;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-}
-
-section{
-    margin-bottom: 20px;
-}
-
-#estudos{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#estudos a{
-    text-decoration: none;
-    color: #fff;
-    
-}
-
-#estudos .btn{
-    margin-top: 20px;
-    background-color: #222;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    transition: transform 0.2 ease,
-                box-shadow 0.2s ease;
-    
-
-}
-
-#estudos .btn:hover{
-    transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.281);
-}
-
-#habilidades{
-    margin-left: 40px;
-}
-
-footer{
+header {
+    background: var(--dark);
+    color: var(--white);
+    padding: 1.5rem;
     text-align: center;
-    padding: 15px;
-    background: #222;
-    color: #fff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    flex: 1; /* Faz o main ocupar o espaço restante */
+    max-width: 800px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+/* Estilizando a lista de Habilidades como "Badges" */
+#habilidades {
+    list-style: none;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#habilidades li {
+    background: #e0e7ff;
+    color: #4338ca;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid #c7d2fe;
+}
+
+/* Seção de Pastas/Estudos */
+#estudos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#estudos .btn {
+    text-decoration: none;
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    min-width: 150px;
+}
+
+#estudos .btn:hover {
+    background-color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--dark);
+    color: #94a3b8;
+    font-size: 0.9rem;
 }
