@@ -40,7 +40,7 @@ botao.addEventListener('click', () =>{
 })
 
 botaoApagar.addEventListener('click', () =>{
-    localStorage.clear()
+    localStorage.removeItem('tarefas')
     tarefas = []
     res.innerHTML = ''
 })
