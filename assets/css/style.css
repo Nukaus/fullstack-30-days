@@ -18,7 +18,7 @@ body {
     color: var(--text);
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Garante que o footer fique no fundo */
+    
 }
 
 header {
