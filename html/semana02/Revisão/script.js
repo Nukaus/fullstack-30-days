@@ -234,8 +234,7 @@ function addLista(){
         f_item.value = ''
         f_item.focus()
     }else{
-        res_task.innerHTML = ''
-        res_task.innerHTML = 'Você precisa adcionar um item.'
+        alert('Você precisa adcionar um item.')
     }
 }
 
