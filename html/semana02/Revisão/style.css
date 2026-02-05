@@ -81,6 +81,25 @@ h3 {
     margin: 15px 0 10px 0;
 }
 
+/* Estilo geral para links */
+a {
+    margin-top: 30px;
+    color: var(--secondary); /* Usa o ciano para links */
+    text-decoration: none;    /* Remove o sublinhado padrão */
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 1px solid transparent; /* Preparação para o efeito de hover */
+}
+
+a:hover {
+    color: var(--primary);    /* Muda para roxo ao passar o mouse */
+    border-bottom: 1px solid var(--primary); /* Cria um sublinhado elegante */
+}
+
+a:active {
+    filter: brightness(0.8); /* Dá um feedback visual de clique */
+}
+
 /* Estilizando Inputs e Selects */
 input, select {
     background-color: #2a2a2a;

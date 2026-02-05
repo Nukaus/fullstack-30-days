@@ -14,4 +14,4 @@ function atualizarProgresso(diaAtual) {
 }
 
 // Chame a função passando o dia em que você está hoje
-atualizarProgresso(13); // Exemplo: Se você está no dia 12
+atualizarProgresso(14); // Exemplo: Se você está no dia 12
