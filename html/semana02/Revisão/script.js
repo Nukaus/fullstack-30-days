@@ -102,9 +102,6 @@ botao_calc.addEventListener('click', () => {
 
     let dados = calcular(n1, n2, operador)
     res_calc.innerHTML =`${n1} ${operador} ${n2} = ${dados}`
-
-    f_n1. value = ''
-    f_n2. value = ''
 })
 
 // Dia 05
