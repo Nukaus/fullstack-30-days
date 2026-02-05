@@ -25,29 +25,25 @@ function tabuada(){
     let num = Number(f_valor.value)
     switch(operador.value){
         case '+':
-            res_tab.innerHTML = ''
-            for(let c = 0; c < 10; c++){
+            for(let c = 0; c <= 10; c++){
                 let soma = num + c
                 res_tab.innerHTML += `${num} + ${c} = ${soma} <br>`
            }
            break
         case '-':
-            res_tab.innerHTML = ''
             for(let c = 0; c <= 10; c++){
                 let soma = num - c
                 res_tab.innerHTML += `${num} - ${c} = ${soma} <br>`
            }
            break
         case '*':
-            res_tab.innerHTML = ''
-            for(let c = 0; c < 10; c++){
+            for(let c = 0; c <= 10; c++){
                 let soma = num * c
                 res_tab.innerHTML += `${num} * ${c} = ${soma} <br>`
            }
            break
         case '/':
-            res_tab.innerHTML = ''
-            for(let c = 0; c < 10; c++){
+            for(let c = 0; c <= 10; c++){
                 let soma = num / c
                 res_tab.innerHTML += `${num} / ${c} = ${soma} <br>`
            }
